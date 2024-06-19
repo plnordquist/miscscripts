@@ -1,5 +1,11 @@
 apiVersion: miscscripts.pnnl.gov/v1beta1
 kind: TenantNamespaceFlavor
 metadata:
+  labels:
+    app.kubernetes.io/name: tenantnamespaceflavor
+    app.kubernetes.io/instance: example
+    app.kubernetes.io/part-of: tenant-namespace-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: tenant-namespace-operator
   name: example
 spec: {}
